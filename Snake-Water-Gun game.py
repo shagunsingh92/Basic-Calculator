@@ -7,7 +7,7 @@ print('''Snake-Water-Gun game!
             - Created by Shagun Singh\n''')
 while i<5:
 
-    a= random.choice(my_list)
+    a= random.choice(my_list) # random.choice method is used here in order to select random element from a sequence
     b= input('What do you want to become: snake,water or gun?:')
     if b=="snake" or b=="water" or b=="gun":
         pass
