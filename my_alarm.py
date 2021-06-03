@@ -1,7 +1,6 @@
 import datetime
 import pygame
 import schedule
-import time
 pygame.mixer.init()
 '''
 Mini project : This is an alarm system which reminds one to drink water, do physical exercise and an eye exercise.
@@ -14,7 +13,8 @@ print('''My Alarm System
         - Created by Shagun Singh\n''')
 
 
-time_limit = time.strftime('%H:%M:%S') #variable is needed to put a time limitation on the activities
+z = datetime.datetime.now()
+time_limit = z.strftime('%H:%M:%S') #variable is needed to put a time limitation on the activities
 
 def my_time():
     '''This function logs in the time when a particular activity was performed by a user.'''
